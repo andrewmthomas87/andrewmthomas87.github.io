@@ -1,0 +1,335 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  border-bottom: 4px solid #111;
+  text-align: right;
+  z-index: 100;
+}
+nav span.logo {
+  float: left;
+  color: #fff;
+  padding: 0.609375em 1.25em;
+  margin-bottom: -4px;
+  background-color: #3498db;
+  border-bottom: 4px solid #2980b9;
+  font-weight: 200;
+  line-height: 1.125em;
+  cursor: pointer;
+}
+nav span.logo:first-letter {
+  font-weight: 400;
+}
+nav > div > a {
+  display: inline-block;
+  color: #aaa;
+  padding: 1em 1.25em;
+  padding-bottom: calc(1em + 4px);
+  margin-bottom: -4px;
+  font-size: 0.75em;
+  font-weight: 300;
+  line-height: 1.125em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav > div > a:last-child {
+  margin-right: 1em;
+}
+nav > div > a:hover {
+  color: #fff;
+}
+nav > div > a.active {
+  color: #fff;
+  padding-bottom: 1em;
+  background-color: #333;
+  border-bottom: 4px solid #aaa;
+  font-weight: 400;
+}
+nav > div > a#toggle {
+  color: transparent;
+  width: 1.125em;
+  background-image: url(e4ca65b39de3e47904dbf582d7499b6c.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 56.25%;
+}
+nav > div > a#toggle:hover {
+  background-image: url(d39578a8f3120756003b112dd5c1e477.svg);
+}
+nav > div > a#toggle.active {
+  background-image: url(0f0ef9b70242b23e035f946df1b6015a.svg);
+  background-size: 45%;
+}
+nav > div div.menu {
+  position: fixed;
+  top: 2.556em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  text-align: left;
+}
+nav > div div.menu a {
+  display: block;
+  color: #aaa;
+  padding: 1em 2.5em;
+  font-weight: 300;
+  text-decoration: none;
+}
+nav > div div.menu a:first-child {
+  margin-top: 0.5em;
+}
+nav > div div.menu a:hover {
+  color: #fff;
+}
+nav > div div.menu a.active {
+  color: #2980b9;
+  background-color: #fff;
+  font-weight: 400;
+}
+section#home {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-perspective-origin: 0 0;
+          perspective-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+section#home > div#background {
+  position: absolute;
+  width: 100%;
+  height: calc(150vh + 8.75em);
+  background-image: url(bba54c2c85b58bad8702406efcbf85b7.jpg);
+  background-size: auto 100%;
+  background-position: center;
+  z-index: -2;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
+section#home section#title {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+section#home section#title h1 {
+  color: #fff;
+  padding: 0 0.5em;
+  margin: 0;
+  font-weight: 300;
+  line-height: 95vh;
+  text-transform: uppercase;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translateZ(-0.625px) scale(1.625);
+          transform: translateZ(-0.625px) scale(1.625);
+}
+section#home section#title h1 span:first-child {
+  padding-right: 0.5em;
+}
+section#home section#introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 17.5em;
+  background-color: #3498db;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+section#home section#introduction h2 {
+  color: #fff;
+  width: 625px;
+  max-width: calc(100% - 100px);
+  margin: 0;
+  font-weight: 200;
+}
+section#home section#introduction h3 {
+  color: #fff;
+  width: 625px;
+  max-width: calc(100% - 100px);
+  padding-bottom: 1em;
+  margin: 0;
+  font-weight: 200;
+}
+section#home section#introduction h3 span span {
+  color: #ddd;
+}
+section#home section#spacer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translateZ(-0.375px) scale(1.375);
+          transform: translateZ(-0.375px) scale(1.375);
+}
+section#home section#spacer h4 {
+  color: #fff;
+  max-width: 500px;
+  width: 66.667vw;
+  margin: 0;
+  font-weight: 200;
+  text-align: center;
+}
+section#home section#about {
+  min-height: calc(100vh - 2.5555555556em);
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+section#home section#about div#pictures {
+  line-height: 0;
+}
+section#home section#about div#pictures > div.width-2 > div {
+  width: 50%;
+  height: 50vw;
+}
+section#home section#about div#pictures > div.width-2 > div.large {
+  width: 100%;
+}
+section#home section#about div#pictures > div.width-3 > div {
+  width: 33.333%;
+  height: 33.333vw;
+}
+section#home section#about div#pictures > div.width-3 > div.large {
+  width: 66.667%;
+}
+section#home section#about div#pictures > div > div {
+  display: inline-block;
+  background-size: 100%;
+  background-position: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+section#home section#about div#pictures > div > div:hover > div {
+  opacity: 1;
+}
+section#home section#about div#pictures > div > div.image-1 {
+  background-image: url(eaf6e70ca79487fbbb7c1127f0831bca.jpg);
+}
+section#home section#about div#pictures > div > div.image-2 {
+  background-image: url(ef15ad9edd1ce44e87c98f8ba12ce601.jpg);
+}
+section#home section#about div#pictures > div > div.image-3 {
+  background-image: url(5f936f410d6aabc6824819b89491eb9e.jpg);
+}
+section#home section#about div#pictures > div > div.image-4 {
+  background-image: url(57bd82e673d94243817f403084443ad0.jpg);
+}
+section#home section#about div#pictures > div > div.image-5 {
+  background-image: url(50a6731a47cf26979d13bd6fa0eab4c7.jpg);
+}
+section#home section#about div#pictures > div > div.image-6 {
+  background-image: url(3792557047162b34ecb82e6934785af2.jpg);
+}
+section#home section#about div#pictures > div > div.image-7 {
+  background-image: url(908afa0334a991a011796f9fc8f13f9e.jpg);
+}
+section#home section#about div#pictures > div > div.image-8 {
+  background-image: url(51e2fde367c7ed505a89e1718106fa4f.jpg);
+}
+section#home section#about div#pictures > div > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+section#home section#about div#pictures > div > div > div.pomegranate {
+  background-color: rgba(192, 57, 43, 0.75);
+}
+section#home section#about div#pictures > div > div > div.nephritis {
+  background-color: rgba(39, 174, 96, 0.75);
+}
+section#home section#about div#pictures > div > div > div.belize-hole {
+  background-color: rgba(41, 128, 185, 0.75);
+}
+section#home section#about div#pictures > div > div > div.pumpkin {
+  background-color: rgba(211, 84, 0, 0.75);
+}
+section#home section#about div#pictures > div > div > div.midnight-blue {
+  background-color: rgba(44, 62, 80, 0.75);
+}
+section#home section#about div#pictures > div > div > div.green-sea {
+  background-color: rgba(22, 160, 133, 0.75);
+}
+section#home section#about div#pictures > div > div > div.wisteria {
+  background-color: rgba(142, 68, 173, 0.75);
+}
+section#home section#about div#pictures > div > div > div > span {
+  color: #fff;
+  padding: 0.5em;
+  font-weight: 200;
+  line-height: 1em;
+}
+html {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #111;
+  overflow: hidden;
+}
+body div#root {
+  height: 100%;
+}
+body div#root > div {
+  height: 100%;
+}
+.fitty {
+  display: inline-block;
+  white-space: nowrap;
+}
+a.block-button {
+  display: block;
+  color: #aaa;
+  padding: 0.5em;
+  background-color: #111;
+  font-size: 1.75em;
+  font-weight: 200;
+  text-align: center;
+  text-decoration: none;
+}
+a.block-button:hover {
+  color: #fff;
+  background-color: #222;
+}
