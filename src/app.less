@@ -1,0 +1,43 @@
+
+html {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-color: #111;
+	overflow: hidden;
+
+	div#root {
+		height: 100%;
+
+		>div {
+			height: 100%;
+		}
+	}
+}
+
+.fitty {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+a.block-button {
+	display: block;
+	color: #aaa;
+	padding: 0.5em;
+	background-color: #111;
+	font-size: 1.75em;
+	font-weight: 200;
+	text-align: center;
+	text-decoration: none;
+
+	&:hover {
+		color: #fff;
+		background-color: #222;
+	}
+}
