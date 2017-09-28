@@ -50,16 +50,16 @@ nav > div > a.active {
 nav > div > a#toggle {
   color: transparent;
   width: 1.125em;
-  background-image: url(e4ca65b39de3e47904dbf582d7499b6c.svg);
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJNZW51XzFfIj48cGF0aCBkPSJNMSwxMGgzMGMwLjU1MiwwLDEtMC40NDgsMS0xYzAtMC41NTItMC40NDgtMS0xLTFIMUMwLjQ0OCw4LDAsOC40NDgsMCw5QzAsOS41NTIsMC40NDgsMTAsMSwxMHoiIGZpbGw9IiNhYWEiLz48cGF0aCBkPSJNMzEsMTVIMWMtMC41NTIsMC0xLDAuNDQ4LTEsMWMwLDAuNTUyLDAuNDQ4LDEsMSwxaDMwYzAuNTUyLDAsMS0wLjQ0OCwxLTFDMzIsMTUuNDQ4LDMxLjU1MiwxNSwzMSwxNXoiIGZpbGw9IiNhYWEiLz48cGF0aCBkPSJNMzEsMjJIMTFjLTAuNTUyLDAtMSwwLjQ0OC0xLDFzMC40NDgsMSwxLDFoMjBjMC41NTIsMCwxLTAuNDQ4LDEtMVMzMS41NTIsMjIsMzEsMjJ6IiBmaWxsPSIjYWFhIi8+PC9nPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjwvc3ZnPgo=);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 56.25%;
 }
 nav > div > a#toggle:hover {
-  background-image: url(d39578a8f3120756003b112dd5c1e477.svg);
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJNZW51XzFfIj48cGF0aCBkPSJNMSwxMGgzMGMwLjU1MiwwLDEtMC40NDgsMS0xYzAtMC41NTItMC40NDgtMS0xLTFIMUMwLjQ0OCw4LDAsOC40NDgsMCw5QzAsOS41NTIsMC40NDgsMTAsMSwxMHoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMzEsMTVIMWMtMC41NTIsMC0xLDAuNDQ4LTEsMWMwLDAuNTUyLDAuNDQ4LDEsMSwxaDMwYzAuNTUyLDAsMS0wLjQ0OCwxLTFDMzIsMTUuNDQ4LDMxLjU1MiwxNSwzMSwxNXoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMzEsMjJIMTFjLTAuNTUyLDAtMSwwLjQ0OC0xLDFzMC40NDgsMSwxLDFoMjBjMC41NTIsMCwxLTAuNDQ4LDEtMVMzMS41NTIsMjIsMzEsMjJ6IiBmaWxsPSIjZmZmIi8+PC9nPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjwvc3ZnPgo=);
 }
 nav > div > a#toggle.active {
-  background-image: url(0f0ef9b70242b23e035f946df1b6015a.svg);
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0xNy40NTksMTYuMDE0bDguMjM5LTguMTk0YzAuMzk1LTAuMzkxLDAuMzk1LTEuMDI0LDAtMS40MTRjLTAuMzk0LTAuMzkxLTEuMDM0LTAuMzkxLTEuNDI4LDAgIGwtOC4yMzIsOC4xODdMNy43Myw2LjI4NGMtMC4zOTQtMC4zOTUtMS4wMzQtMC4zOTUtMS40MjgsMGMtMC4zOTQsMC4zOTYtMC4zOTQsMS4wMzcsMCwxLjQzMmw4LjMwMiw4LjMwM2wtOC4zMzIsOC4yODYgIGMtMC4zOTQsMC4zOTEtMC4zOTQsMS4wMjQsMCwxLjQxNGMwLjM5NCwwLjM5MSwxLjAzNCwwLjM5MSwxLjQyOCwwbDguMzI1LTguMjc5bDguMjc1LDguMjc2YzAuMzk0LDAuMzk1LDEuMDM0LDAuMzk1LDEuNDI4LDAgIGMwLjM5NC0wLjM5NiwwLjM5NC0xLjAzNywwLTEuNDMyTDE3LjQ1OSwxNi4wMTR6IiBmaWxsPSIjZmZmIiBpZD0iQ2xvc2UiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4K);
   background-size: 45%;
 }
 nav > div div.menu {
@@ -92,7 +92,7 @@ nav > div div.menu a.active {
 section#home {
   height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-perspective: 1px;
           perspective: 1px;
   -webkit-perspective-origin: 0 0;
@@ -105,7 +105,7 @@ section#home > div#background {
   width: 100%;
   height: calc(150vh + 8.75em);
   background-image: url(bba54c2c85b58bad8702406efcbf85b7.jpg);
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   z-index: -2;
   -webkit-transform-origin: 0 0;
@@ -190,7 +190,7 @@ section#home section#spacer {
   -webkit-transform: translateZ(-0.375px) scale(1.375);
           transform: translateZ(-0.375px) scale(1.375);
 }
-section#home section#spacer h4 {
+section#home section#spacer h3 {
   color: #fff;
   max-width: 500px;
   width: 66.667vw;
@@ -198,65 +198,179 @@ section#home section#spacer h4 {
   font-weight: 200;
   text-align: center;
 }
-section#home section#about {
-  min-height: calc(100vh - 2.5555555556em);
+section#home section#home-skills > div {
+  position: relative;
+  background-color: #263238;
+  border-top: 10px solid #3b4d56;
+  cursor: pointer;
+}
+section#home section#home-skills > div:hover {
+  border-top: 10px solid #3498db;
+}
+section#home section#home-skills > div:hover > div {
+  opacity: 1;
+}
+section#home section#home-skills > div > h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  width: 30em;
+  max-width: calc(100% - 5em);
+  font-weight: 200;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+section#home section#home-skills > div > h3:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+section#home section#home-skills > div > h3 > span {
+  line-height: 0.875em;
+}
+section#home section#home-skills > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  opacity: 0.625;
+}
+section#home section#home-skills > div > div > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.75em 1.5em;
+  padding-bottom: 1.5em;
+  height: 20.2em;
+  overflow: hidden;
+}
+@media only screen and (max-width: 920px) {
+  section#home section#home-skills > div > div > div {
+    font-size: 0.75em;
+    height: 23.5em;
+  }
+}
+section#home section#home-skills > div > div > div.large {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+section#home section#home-skills > div > div > div:not(.large) {
+  background-color: #1e282c;
+}
+section#home section#home-skills a.block-button {
+  background-color: #1c2429;
+}
+section#home section#home-skills a.block-button:hover {
+  background-color: #3498db;
+}
+section#home section#home-skills > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translateZ(-0.375px) scale(1.375);
+          transform: translateZ(-0.375px) scale(1.375);
+}
+section#home section#home-skills > section div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(1ef220acb5a870881f1cb2fe990e23bb.jpg);
+  background-size: cover;
+  background-position: center 80%;
+  z-index: -2;
+}
+section#home section#home-skills > section h3 {
+  color: #fff;
+  max-width: 500px;
+  width: 66.667vw;
+  margin: 0;
+  font-weight: 200;
+  text-align: center;
+}
+section#home section#home-about {
   background-color: #fff;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
-section#home section#about div#pictures {
+section#home section#home-about div#pictures {
   line-height: 0;
 }
-section#home section#about div#pictures > div.width-2 > div {
+section#home section#home-about div#pictures > div.width-2 > div {
   width: 50%;
   height: 50vw;
 }
-section#home section#about div#pictures > div.width-2 > div.large {
+section#home section#home-about div#pictures > div.width-2 > div.large {
   width: 100%;
 }
-section#home section#about div#pictures > div.width-3 > div {
+section#home section#home-about div#pictures > div.width-3 > div {
   width: 33.333%;
   height: 33.333vw;
 }
-section#home section#about div#pictures > div.width-3 > div.large {
+section#home section#home-about div#pictures > div.width-3 > div.large {
   width: 66.667%;
 }
-section#home section#about div#pictures > div > div {
+section#home section#home-about div#pictures > div > div {
   display: inline-block;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   vertical-align: top;
   cursor: pointer;
 }
-section#home section#about div#pictures > div > div:hover > div {
+section#home section#home-about div#pictures > div > div:hover > div {
   opacity: 1;
 }
-section#home section#about div#pictures > div > div.image-1 {
+section#home section#home-about div#pictures > div > div.image-1 {
   background-image: url(eaf6e70ca79487fbbb7c1127f0831bca.jpg);
 }
-section#home section#about div#pictures > div > div.image-2 {
+section#home section#home-about div#pictures > div > div.image-2 {
   background-image: url(ef15ad9edd1ce44e87c98f8ba12ce601.jpg);
 }
-section#home section#about div#pictures > div > div.image-3 {
+section#home section#home-about div#pictures > div > div.image-3 {
   background-image: url(5f936f410d6aabc6824819b89491eb9e.jpg);
 }
-section#home section#about div#pictures > div > div.image-4 {
+section#home section#home-about div#pictures > div > div.image-4 {
   background-image: url(57bd82e673d94243817f403084443ad0.jpg);
 }
-section#home section#about div#pictures > div > div.image-5 {
+section#home section#home-about div#pictures > div > div.image-5 {
   background-image: url(50a6731a47cf26979d13bd6fa0eab4c7.jpg);
 }
-section#home section#about div#pictures > div > div.image-6 {
+section#home section#home-about div#pictures > div > div.image-6 {
   background-image: url(3792557047162b34ecb82e6934785af2.jpg);
 }
-section#home section#about div#pictures > div > div.image-7 {
+section#home section#home-about div#pictures > div > div.image-7 {
   background-image: url(908afa0334a991a011796f9fc8f13f9e.jpg);
 }
-section#home section#about div#pictures > div > div.image-8 {
+section#home section#home-about div#pictures > div > div.image-8 {
   background-image: url(51e2fde367c7ed505a89e1718106fa4f.jpg);
 }
-section#home section#about div#pictures > div > div > div {
+section#home section#home-about div#pictures > div > div > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,32 +384,75 @@ section#home section#about div#pictures > div > div > div {
   height: 100%;
   opacity: 0;
 }
-section#home section#about div#pictures > div > div > div.pomegranate {
+section#home section#home-about div#pictures > div > div > div.pomegranate {
   background-color: rgba(192, 57, 43, 0.75);
 }
-section#home section#about div#pictures > div > div > div.nephritis {
+section#home section#home-about div#pictures > div > div > div.nephritis {
   background-color: rgba(39, 174, 96, 0.75);
 }
-section#home section#about div#pictures > div > div > div.belize-hole {
+section#home section#home-about div#pictures > div > div > div.belize-hole {
   background-color: rgba(41, 128, 185, 0.75);
 }
-section#home section#about div#pictures > div > div > div.pumpkin {
+section#home section#home-about div#pictures > div > div > div.pumpkin {
   background-color: rgba(211, 84, 0, 0.75);
 }
-section#home section#about div#pictures > div > div > div.midnight-blue {
+section#home section#home-about div#pictures > div > div > div.midnight-blue {
   background-color: rgba(44, 62, 80, 0.75);
 }
-section#home section#about div#pictures > div > div > div.green-sea {
+section#home section#home-about div#pictures > div > div > div.green-sea {
   background-color: rgba(22, 160, 133, 0.75);
 }
-section#home section#about div#pictures > div > div > div.wisteria {
+section#home section#home-about div#pictures > div > div > div.wisteria {
   background-color: rgba(142, 68, 173, 0.75);
 }
-section#home section#about div#pictures > div > div > div > span {
+section#home section#home-about div#pictures > div > div > div > span {
   color: #fff;
   padding: 0.5em;
   font-weight: 200;
   line-height: 1em;
+}
+section#skills {
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  overflow-y: auto;
+}
+section#about {
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  overflow-y: auto;
+}
+section#about img#me {
+  max-width: 100%;
+  height: calc(100vh - 11.055555556em);
+  max-height: 100vw;
+}
+section#not-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+section#not-found h1 {
+  color: #fff;
+  width: 80vmin;
+  font-weight: 200;
+}
+section#not-found h2 {
+  color: #3498db;
+  width: 80vmin;
+  font-weight: 200;
 }
 html {
   height: 100%;
@@ -304,6 +461,7 @@ html {
   font-weight: 300;
 }
 body {
+  color: #222;
   height: 100%;
   margin: 0;
   background-color: #111;
@@ -314,10 +472,58 @@ body div#root {
 }
 body div#root > div {
   height: 100%;
+  overflow: hidden;
 }
-.fitty {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+h1.title {
+  color: #222;
+  padding: 0.25em;
+  margin-top: 46px;
+  background-color: #fff;
+  font-size: 5em;
+  font-weight: 200;
+  text-align: center;
+}
+h4 {
+  color: #3498db;
+  margin: 0.5em 0;
+  font-size: 2em;
+  font-weight: 300;
+}
+h4 span {
+  border-bottom: 2px solid #3498db;
+}
+p {
+  color: #333;
+  width: 35em;
+  max-width: calc(100% - 2.5em);
+  margin: 1em auto;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+p span {
+  border-bottom: 2px solid #3498db;
+}
+blockquote {
   display: inline-block;
-  white-space: nowrap;
+  color: #444;
+  max-width: calc(100% - 5em);
+  padding: 0.5em 1.5em;
+  margin: 1em auto;
+  background-color: #fff;
+  border-left: 0.5em solid #ddd;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  text-align: left;
+}
+blockquote span.author {
+  display: inline-block;
+  color: #777;
+  margin-left: 0.5em;
+  font-size: 0.625em;
 }
 a.block-button {
   display: block;
@@ -332,4 +538,48 @@ a.block-button {
 a.block-button:hover {
   color: #fff;
   background-color: #222;
+}
+a.block-button.colored {
+  color: #eee;
+  background-color: #2980b9;
+}
+a.block-button.colored:hover {
+  color: #fff;
+  background-color: #3498db;
+}
+.fitty {
+  display: inline-block;
+  white-space: nowrap;
+}
+pre.code {
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+pre.code span.p {
+  color: #C792EA;
+}
+pre.code span.y {
+  color: #FFCB6B;
+}
+pre.code span.lb {
+  color: #89DDFF;
+}
+pre.code span.b {
+  color: #82AAFF;
+}
+pre.code span.g {
+  color: #C3E88D;
+}
+pre.code span.gr {
+  color: #B2CCD6;
+}
+pre.code span.r {
+  color: #FF5370;
+}
+pre.code span.o {
+  color: #F78C6C;
+}
+pre.code span.d {
+  color: #546E7A;
 }
