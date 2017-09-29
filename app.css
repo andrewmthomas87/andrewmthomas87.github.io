@@ -90,9 +90,10 @@ nav > div div.menu a.active {
   font-weight: 400;
 }
 section#home {
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   -webkit-perspective: 1px;
           perspective: 1px;
   -webkit-perspective-origin: 0 0;
@@ -100,7 +101,7 @@ section#home {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-section#home > div#background {
+section#home div#background {
   position: absolute;
   width: 100%;
   height: calc(150vh + 8.75em);
@@ -114,24 +115,37 @@ section#home > div#background {
           transform: translateZ(-1px) scale(2);
 }
 section#home section#title {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
 section#home section#title h1 {
+  display: inline-block;
   color: #fff;
-  padding: 0 0.5em;
+  width: 90vw;
   margin: 0;
   font-weight: 300;
-  line-height: 95vh;
+  text-align: center;
   text-transform: uppercase;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform-origin: -1em 0;
+          transform-origin: -1em 0;
   -webkit-transform: translateZ(-0.625px) scale(1.625);
           transform: translateZ(-0.625px) scale(1.625);
 }
-section#home section#title h1 span:first-child {
+section#home section#title h1 > span {
+  display: inline-block;
+  padding-top: 0.75em;
+}
+section#home section#title h1 span span:first-child {
   padding-right: 0.5em;
 }
 section#home section#introduction {
@@ -207,6 +221,9 @@ section#home section#home-skills > div {
 section#home section#home-skills > div:hover {
   border-top: 10px solid #3498db;
 }
+section#home section#home-skills > div:hover > h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 section#home section#home-skills > div:hover > div {
   opacity: 1;
 }
@@ -217,21 +234,11 @@ section#home section#home-skills > div > h3 {
   color: #fff;
   width: 30em;
   max-width: calc(100% - 5em);
+  padding: 0.5em 0.75em;
+  background-color: rgba(0, 0, 0, 0.25);
   font-weight: 200;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-section#home section#home-skills > div > h3:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: -1;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
 }
 section#home section#home-skills > div > h3 > span {
   line-height: 0.875em;
@@ -293,8 +300,8 @@ section#home section#home-skills > section {
   z-index: -1;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  -webkit-transform: translateZ(-0.375px) scale(1.375);
-          transform: translateZ(-0.375px) scale(1.375);
+  -webkit-transform: translateZ(-0.625px) scale(1.625);
+          transform: translateZ(-0.625px) scale(1.625);
 }
 section#home section#home-skills > section div {
   position: absolute;
@@ -456,23 +463,25 @@ section#not-found h2 {
 }
 html {
   height: 100%;
+  overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 300;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
 }
 body {
   color: #222;
   height: 100%;
   margin: 0;
   background-color: #111;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
-body div#root {
-  height: 100%;
-}
-body div#root > div {
-  height: 100%;
-  overflow: hidden;
+body div#root > div > section {
+  min-height: 100vh;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
