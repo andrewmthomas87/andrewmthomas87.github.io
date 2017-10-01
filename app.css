@@ -577,13 +577,6 @@ section#skills div.sections > div div.list > div span.empty {
     margin-right: 0;
   }
 }
-section#skills p a {
-  color: #2980b9;
-  text-decoration: none;
-}
-section#skills p a:hover {
-  color: #3498db;
-}
 section#skills span.notice {
   display: inline-block;
   color: #555;
@@ -604,6 +597,143 @@ section#about img#me {
   height: calc(100vh - 10.9em);
   min-height: 37.5vw;
   max-height: 100vw;
+}
+section#projects {
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  overflow-y: auto;
+}
+section#projects div.projects {
+  width: 30em;
+  max-width: calc(100% - 2.5em);
+  margin: 1.5em auto;
+  margin-top: 1em;
+}
+section#projects div.projects > div {
+  padding: 1.5em 2em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border-bottom: 5px solid #ddd;
+  text-align: left;
+}
+section#projects div.projects > div h5 {
+  color: #555;
+  font-weight: 300;
+}
+section#projects div.projects > div h2 {
+  padding: 0.125em 0;
+  margin-bottom: 0.25em;
+  font-weight: 300;
+}
+section#projects div.projects > div h6 {
+  color: #3498db;
+  font-size: 1em;
+  font-weight: 300;
+}
+section#projects div.projects > div div.tags {
+  margin: 0.375em 0.25em;
+}
+section#projects div.projects > div div.tags span {
+  display: inline-block;
+  color: #333;
+  padding: 0.375em 0.625em;
+  margin-right: 0.375em;
+  margin-bottom: 0.25em;
+  background-color: #eee;
+  font-size: 0.75em;
+}
+section#projects div.projects > div div.description {
+  margin: 0 1em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+section#projects div.projects > div div.description div {
+  color: #555;
+  font-size: 0.875em;
+  margin-bottom: 0.5em;
+}
+section#projects div.projects > div div.description a {
+  font-size: 0.875em;
+}
+section#projects span.notice {
+  display: inline-block;
+  color: #555;
+  max-width: calc(100% - 5em);
+  margin: 1em auto;
+  margin-top: 3em;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+section#work {
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  overflow-y: auto;
+}
+section#work div.work {
+  width: 30em;
+  max-width: calc(100% - 2.5em);
+  margin: 1.5em auto;
+  margin-top: 1em;
+}
+section#work div.work > div {
+  padding: 1.5em 2em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border-bottom: 5px solid #ddd;
+  text-align: left;
+}
+section#work div.work > div h4 {
+  color: #555;
+  margin: 0;
+  margin-bottom: 0.125em;
+  font-size: 1.125em;
+  font-weight: 300;
+}
+section#work div.work > div h2 {
+  padding: 0.125em 0;
+  margin-bottom: 0.25em;
+  font-weight: 300;
+}
+section#work div.work > div h5 {
+  color: #555;
+  font-weight: 300;
+}
+section#work div.work > div h6 {
+  color: #3498db;
+  font-size: 1em;
+  font-weight: 300;
+}
+section#contact {
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  overflow-y: auto;
+}
+section#contact div.contact {
+  width: 30em;
+  max-width: calc(100% - 2.5em);
+  margin: 1.5em auto;
+  margin-top: 1em;
+}
+section#contact div.contact > div {
+  padding: 1.5em 2em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border-bottom: 5px solid #ddd;
+  text-align: left;
+}
+section#contact div.contact > div h4 {
+  color: #555;
+  margin: 0;
+  margin-bottom: 0.125em;
+  font-size: 1.125em;
+  font-weight: 300;
+}
+section#contact div.contact > div h2 {
+  padding: 0.125em 0;
+  font-weight: 300;
 }
 section#not-found {
   display: -webkit-box;
@@ -685,6 +815,13 @@ p {
 }
 p span {
   border-bottom: 2px solid #3498db;
+}
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+a:hover {
+  color: #3498db;
 }
 div.container {
   width: 35em;
