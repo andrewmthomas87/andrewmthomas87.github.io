@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { NavLink } from 'react-router-dom'
 import * as MediaQuery from 'react-responsive'
 
 import ToggleableNav from './ToggleableNav'
@@ -11,23 +12,16 @@ const Nav: React.StatelessComponent<IProps> = (): JSX.Element => (
 	<nav>
 		<span className='logo'>AT</span>
 		<MediaQuery maxWidth={630}>
-			<ToggleableNav>
-				<a href='/' className='active'>Home</a>
-				<a href='/about'>About</a>
-				<a href='/skills'>Skills</a>
-				<a href='/projects'>Projects</a>
-				<a href='/work'>Work</a>
-				<a href='/contact'>Contact</a>
-			</ToggleableNav>
+			<ToggleableNav />
 		</MediaQuery>
 		<MediaQuery minWidth={631}>
 			<div>
-				<a href='/' className='active'>Home</a>
-				<a href='/about'>About</a>
-				<a href='/skills'>Skills</a>
-				<a href='/projects'>Projects</a>
-				<a href='/work'>Work</a>
-				<a href='/contact'>Contact</a>
+				<NavLink to='/' activeClassName='active' exact={true}>Home</NavLink>
+				<NavLink to='/skills' activeClassName='active'>Skills</NavLink>
+				<NavLink to='/about' activeClassName='active'>About</NavLink>
+				<NavLink to='/projects' activeClassName='active'>Projects</NavLink>
+				<NavLink to='/work' activeClassName='active'>Work</NavLink>
+				<NavLink to='/contact' activeClassName='active'>Contact</NavLink>
 			</div>
 		</MediaQuery>
 	</nav>

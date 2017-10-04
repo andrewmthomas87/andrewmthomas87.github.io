@@ -1,29 +1,106 @@
 
 html {
 	height: 100%;
+	overflow: hidden;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-moz-osx-font-smoothing: auto !important;
 }
 
 body {
+	color: #222;
 	height: 100%;
 	margin: 0;
 	background-color: #111;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 
-	div#root {
-		height: 100%;
-
-		>div {
-			height: 100%;
-		}
+	div#root>div>section {
+		min-height: 100vh;
 	}
 }
 
-.fitty {
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1.title {
+	color: #222;
+	padding: 0.25em;
+	margin-top: 44px;
+	background-color: #fff;
+	font-size: 5em;
+	font-weight: 200;
+	text-align: center;
+}
+
+h4 {
+	color: #3498db;
+	margin: 0.5em 0;
+	font-size: 2em;
+	font-weight: 300;
+
+	span {
+		border-bottom: 2px solid #3498db;
+	}
+}
+
+p {
+	color: #333;
+	width: 35em;
+	max-width: ~'calc(100% - 2.5em)';
+	margin: 1em auto;
+	margin-top: 0.5em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+
+	span {
+		border-bottom: 2px solid #3498db;
+	}
+}
+
+a {
+	color: #2980b9;
+	text-decoration: none;
+
+	&:hover {
+		color: #3498db;
+	}
+}
+
+div.container {
+	width: 35em;
+	max-width: ~'calc(100% - 2.5em)';
+	margin: 1.5em auto;
+	margin-top: 1em;
+
+	&.large {
+		width: 50em;
+	}
+}
+
+blockquote {
 	display: inline-block;
-	white-space: nowrap;
+	color: #444;
+	max-width: ~'calc(100% - 5em)';
+	padding: 0.5em 1.5em;
+	margin: 1em auto;
+	background-color: #fff;
+	border-left: 0.5em solid #ddd;
+	font-size: 1.25em;
+	line-height: 1.25em;
+	text-align: left;
+
+	span.author {
+		display: inline-block;
+		color: #777;
+		margin-left: 0.5em;
+		font-size: 0.625em;
+	}
 }
 
 a.block-button {
@@ -36,8 +113,61 @@ a.block-button {
 	text-align: center;
 	text-decoration: none;
 
+	@media only screen and (max-width : 475px) {
+		font-size: 1.25em;
+	}
+
 	&:hover {
 		color: #fff;
 		background-color: #222;
+	}
+
+	&.colored {
+		color: #eee;
+		background-color: #2980b9;
+
+		&:hover {
+			color: #fff;
+			background-color: #3498db;
+		}
+	}
+}
+
+.fitty {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+pre.code {
+	color: #fff;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 300;
+
+	span.p {
+		color: #C792EA;
+	}
+	span.y {
+		color: #FFCB6B;
+	}
+	span.lb {
+		color: #89DDFF;
+	}
+	span.b {
+		color: #82AAFF;
+	}
+	span.g {
+		color: #C3E88D;
+	}
+	span.gr {
+		color: #B2CCD6;
+	}
+	span.r {
+		color: #FF5370;
+	}
+	span.o {
+		color: #F78C6C;
+	}
+	span.d {
+		color: #546E7A;
 	}
 }

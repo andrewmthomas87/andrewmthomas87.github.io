@@ -1,5 +1,8 @@
 
 declare module 'fitty' {
-	function fitty(selector: string, options?: any): void
+	type Fitty = (selector: string, options?: any) => void & {
+		fitAll(): void
+	}
+	var fitty: Fitty
 	export default fitty
 }

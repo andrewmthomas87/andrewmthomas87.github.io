@@ -30,7 +30,9 @@ module.exports = {
 					fallback: 'style-loader'
 				})
 			},
-			{ test: /\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?hash=sha512&digest=hex&name=[hash].[ext]' }
+			{ test: /\.(jpe?g|png|gif)$/i, loader: 'file-loader?hash=sha512&digest=hex&name=[hash].[ext]' },
+			{ test: /\.svg/, loader: 'url-loader' },
+			{ test: /\.txt/, loader: 'string-loader' }
 		]
 	},
 	output: {

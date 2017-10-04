@@ -1,18 +1,19 @@
 
 section#home {
-	height: 100%;
+	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	perspective: 1px;
 	perspective-origin: 0 0;
 	transform-style: preserve-3d;
 
-	>div#background {
+	div#background {
 		position: absolute;
 		width: 100%;
 		height: ~'calc(150vh + 8.75em)';
 		background-image: url('../../assets/background.jpg');
-		background-size: auto 100%;
+		background-size: cover;
 		background-position: center;
 		z-index: -2;
 		transform-origin: 0 0;
@@ -20,22 +21,30 @@ section#home {
 	}
 
 	section#title {
-		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.25);
 		z-index: -1;
 
 		h1 {
+			display: inline-block;
 			color: #fff;
-			padding: 0 0.5em;
+			width: 90vw;
 			margin: 0;
 			font-weight: 300;
-			line-height: 95vh;
+			text-align: center;
 			text-transform: uppercase;
-			transform-origin: 0 0;
+			transform-origin: -1em 0;
 			transform: translateZ(-0.625px) scale(1.625);
 
-			span:first-child {
+			>span {
+				display: inline-block;
+				padding-top: 0.875em;
+			}
+
+			span span:first-child {
 				padding-right: 0.5em;
 			}
 		}
@@ -54,7 +63,7 @@ section#home {
 		h2 {
 			color: #fff;
 			width: 625px;
-			max-width: ~'calc(100% - 100px)';
+			max-width: ~'calc(100% - 50px)';
 			margin: 0;
 			font-weight: 200;
 		}
@@ -62,7 +71,7 @@ section#home {
 		h3 {
 			color: #fff;
 			width: 625px;
-			max-width: ~'calc(100% - 100px)';
+			max-width: ~'calc(100% - 50px)';
 			padding-bottom: 1em;
 			margin: 0;
 			font-weight: 200;
@@ -83,21 +92,130 @@ section#home {
 		transform-origin: 0 0;
 		transform: translateZ(-0.375px) scale(1.375);
 
-		h4 {
+		h3 {
 			color: #fff;
 			max-width: 500px;
-			width: 66.667vw;
+			width: 75vw;
 			margin: 0;
 			font-weight: 200;
 			text-align: center;
 		}
 	}
 
-	section#about {
-		min-height: ~'calc(100vh - 2.5555555556em)';
+	section#home-skills {
+		>div {
+			position: relative;
+			background-color: #263238;
+			border-top: 10px solid #3b4d56;
+			cursor: pointer;
+			transform: translateZ(0);
+
+			&:hover {
+				border-top: 10px solid #3498db;
+
+				>h3 {
+					background-color: rgba(0, 0, 0, 0.5);
+				}
+
+				>div {
+					opacity: 1;
+				}
+			}
+
+			>h3 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				color: #fff;
+				width: 30em;
+				max-width: ~'calc(100% - 5em)';
+				padding: 0.5em 0.75em;
+				background-color: rgba(0, 0, 0, 0.25);
+				font-weight: 200;
+				transform: translate(-50%, -50%);
+
+				>span {
+					line-height: 0.875em;
+				}
+			}
+
+			>div {
+				display: flex;
+				flex-direction: row;
+				align-items: stretch;
+				opacity: 0.625;
+				pointer-events: none;
+
+				>div {
+					flex: 1;
+					padding: 0.75em 1.5em;
+					padding-bottom: 1.5em;
+					height: 20.2em;
+					overflow: hidden;
+
+					@media only screen and (max-width : 920px) {
+						font-size: 0.75em;
+						height: 23.5em;
+					}
+
+					&.large {
+						flex: 1.5;
+					}
+
+					&:not(.large) {
+						background-color: #1e282c;
+					}
+				}
+			}
+		}
+
+		a.block-button {
+			background-color: #1c2429;
+			margin-top: -1px;
+
+			&:hover {
+				background-color: #11171a;
+			}
+		}
+
+		>section {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			height: 100vh;
+			z-index: -1;
+			transform-origin: 0 0;
+			transform: translateZ(-0.625px) scale(1.625);
+
+			div {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-image: url('../../assets/background2.jpg');
+				background-size: cover;
+				background-position: center 80%;
+				z-index: -2;
+			}
+
+			h3 {
+				color: #fff;
+				max-width: 500px;
+				width: 66.667vw;
+				margin: 0;
+				border-bottom: 4px solid #e74c3c;
+				font-weight: 300;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	section#home-about {
 		background-color: #fff;
 		text-align: center;
-		box-sizing: border-box;
 
 		div#pictures {
 			line-height: 0;
@@ -127,7 +245,7 @@ section#home {
 
 				>div {
 					display: inline-block;
-					background-size: 100%;
+					background-size: cover;
 					background-position: center;
 					vertical-align: top;
 					cursor: pointer;
@@ -168,6 +286,7 @@ section#home {
 						width: 100%;
 						height: 100%;
 						opacity: 0;
+						pointer-events: none;
 
 						&.pomegranate {
 							background-color: rgba(192, 57, 43, 0.75);
