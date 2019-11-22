@@ -1,0 +1,47 @@
+@import (reference) '~less/variables.less';
+
+.about {
+	padding-bottom: 2em;
+	background-color: @base03;
+
+	.quote {
+		color: @base1;
+		padding: 0.75em;
+		background-color: @base02;
+		font-size: 1.5em;
+		font-weight: 300;
+		text-align: center;
+
+		.author {
+			color: @base01;
+		}
+	}
+
+	.text {
+		color: #111;
+		width: 40em;
+		max-width: ~'calc(100% - 2.5em)';
+		padding: 2em 2.5em;
+		margin: 0 auto;
+		margin-top: 1.5em;
+		background-color: #fff;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.375em;
+		font-weight: 300;
+		line-height: 1.5em;
+		box-sizing: border-box;
+
+		.block {
+			display: block;
+			margin-bottom: 0.625em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.bold {
+			color: @blue;
+		}
+	}
+}
