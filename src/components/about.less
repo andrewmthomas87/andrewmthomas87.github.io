@@ -31,17 +31,28 @@
 		line-height: 1.5em;
 		box-sizing: border-box;
 
+		.portrait {
+			display: block;
+			width: 20em;
+			height: 20em;
+			margin: 0.625em auto;
+			background-image: url('../assets/portrait.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
 		.block {
 			display: block;
 			margin-bottom: 0.625em;
 
+			.bold {
+				color: @blue;
+			}
+
 			&:last-child {
 				margin-bottom: 0;
 			}
-		}
-
-		.bold {
-			color: @blue;
 		}
 	}
 }

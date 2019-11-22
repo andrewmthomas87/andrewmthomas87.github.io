@@ -25,7 +25,7 @@ const config = {
 				]
 			},
 			{
-				test: /\.jpg$/,
+				test: /\.(jpg|png)$/,
 				use: 'url-loader?limit=8192'
 			}
 		]
