@@ -20,46 +20,73 @@
 		.block {
 			display: inline-block;
 			width: 30em;
-			height: 60em;
-			margin: 1em;
-			margin-bottom: 2em;
+			margin: 0.5em;
+			margin-bottom: 1em;
 			background-color: @base03;
+			border-radius: 4px;
 			vertical-align: top;
 
 			&:first-child {
-				margin-left: 2em;
+				margin-left: 1em;
 			}
 
 			&:last-child {
-				margin-right: 2em;
+				margin-right: 1em;
 			}
 
 			.header {
 				color: #fff;
-				padding: 1em;
-				padding-bottom: 0.375em;
+				padding: 0.625em 1em;
 				margin: 0;
-				font-size: 2.25em;
+				font-size: 2em;
 				font-weight: 400;
 			}
 
 			.subheader {
-				color: @cyan;
-				padding: 0.5em 1.29em;
-				padding-bottom: 0.375em;
+				color: @base0;
+				padding: 0.375em 0.75em;
 				margin: 0;
-				font-size: 1.75em;
+				background-color: darken(@base02, 6.25%);
+				font-size: 1.375em;
 				font-weight: 300;
 			}
 
-			.item {
-				color: @base1;
-				padding: 0.5em;
-				padding-left: 2.5em;
-				font-size: 1.25em;
-				font-weight: 300;
-				white-space: normal;
-				line-height: 1.5em;
+			.items {
+				padding: 0.625em 0.75em;
+				padding-bottom: 0;
+				white-space: initial;
+
+				.item {
+					display: inline-block;
+					color: #fff;
+					padding: 0.375em 0.5em;
+					margin-right: 0.625em;
+					margin-bottom: 0.625em;
+					background-color: lighten(@base02, 5%);
+					border-radius: 4px;
+					font-weight: 300;
+
+					&.highlight {
+						background-color: @blue;
+					}
+				}
+			}
+
+			.list {
+				white-space: initial;
+
+				.listItem {
+					color: #fff;
+					padding: 0.625em 0.5em;
+					margin: 0 0.75em;
+					border-bottom: 1px solid lighten(@base02, 5%);
+					line-height: 1.375em;
+					font-weight: 300;
+
+					&:last-child {
+						border-bottom: none;
+					}
+				}
 			}
 		}
 	}
