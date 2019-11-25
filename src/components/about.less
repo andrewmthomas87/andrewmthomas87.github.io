@@ -1,8 +1,8 @@
 @import (reference) '~less/variables.less';
 
 .about {
-	padding-bottom: 2em;
 	background-color: @base03;
+	padding-bottom: 6em;
 
 	.quote {
 		color: @base1;
@@ -17,41 +17,36 @@
 		}
 	}
 
-	.text {
-		color: #111;
-		width: 40em;
-		max-width: ~'calc(100% - 2.5em)';
-		padding: 2em 2.5em;
+	.block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 60em;
 		margin: 0 auto;
-		margin-top: 1.5em;
+		margin-top: 2em;
 		background-color: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1.375em;
-		font-weight: 300;
-		line-height: 1.5em;
-		box-sizing: border-box;
 
 		.portrait {
-			display: block;
 			width: 20em;
-			height: 20em;
-			margin: 0.625em auto;
-			background-image: url('../assets/portrait.png');
+			height: 22.5em;
+			margin: 1.5em;
 			background-position: center;
+			background-image: url('../assets/portrait.png');
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
 
-		.block {
-			display: block;
-			margin-bottom: 0.625em;
+		.text {
+			flex: 1;
+			margin: 1.5em;
+			margin-right: 2.25em;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.375em;
+			font-weight: 300;
+			line-height: 1.5em;
 
-			.bold {
-				color: @blue;
-			}
-
-			&:last-child {
-				margin-bottom: 0;
+			.paragraph {
+				margin-bottom: 0.75em;
 			}
 		}
 	}

@@ -1,0 +1,66 @@
+@import (reference) '~less/variables.less';
+
+.skills {
+	background-color: @base02;
+
+	.title {
+		color: #fff;
+		padding-top: 0.125em;
+		margin: 0;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 7.5em;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.container {
+		white-space: nowrap;
+		overflow-x: auto;
+
+		.block {
+			display: inline-block;
+			width: 30em;
+			height: 60em;
+			margin: 1em;
+			margin-bottom: 2em;
+			background-color: @base03;
+			vertical-align: top;
+
+			&:first-child {
+				margin-left: 2em;
+			}
+
+			&:last-child {
+				margin-right: 2em;
+			}
+
+			.header {
+				color: #fff;
+				padding: 1em;
+				padding-bottom: 0.375em;
+				margin: 0;
+				font-size: 2.25em;
+				font-weight: 400;
+			}
+
+			.subheader {
+				color: @cyan;
+				padding: 0.5em 1.29em;
+				padding-bottom: 0.375em;
+				margin: 0;
+				font-size: 1.75em;
+				font-weight: 300;
+			}
+
+			.item {
+				color: @base1;
+				padding: 0.5em;
+				padding-left: 2.5em;
+				font-size: 1.25em;
+				font-weight: 300;
+				white-space: normal;
+				line-height: 1.5em;
+			}
+		}
+	}
+}
