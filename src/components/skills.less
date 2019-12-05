@@ -2,6 +2,7 @@
 
 .skills {
 	background-color: @base02;
+	border-bottom: 4em solid @base03;
 
 	.title {
 		color: #fff;
@@ -13,30 +14,61 @@
 		text-align: center;
 	}
 
+	.legend {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0.75em;
+
+		.bubble {
+			width: 1em;
+			height: 1em;
+			margin-right: 0.625em;
+			background-color: lighten(@base02, 5%);
+			border-radius: 50%;
+
+			&.highlight {
+				background-color: @blue;
+			}
+		}
+
+		.label {
+			color: #fff;
+			font-size: 1em;
+			font-weight: 300;
+		}
+
+		.divider {
+			width: 1.5em;
+		}
+	}
+
 	.container {
 		white-space: nowrap;
-		overflow-x: auto;
+		overflow-x: scroll;
 
 		.block {
 			display: inline-block;
 			width: 30em;
-			margin: 0.5em;
-			margin-bottom: 1em;
+			margin: 0.75em;
+			margin-bottom: 2em;
 			background-color: @base03;
 			border-radius: 4px;
 			vertical-align: top;
 
 			&:first-child {
-				margin-left: 1em;
+				margin-left: 1.5em;
 			}
 
 			&:last-child {
-				margin-right: 1em;
+				margin-right: 1.5em;
 			}
 
 			.header {
 				color: #fff;
 				padding: 0.625em 1em;
+				padding-bottom: 0.5em;
 				margin: 0;
 				font-size: 2em;
 				font-weight: 400;
@@ -79,7 +111,7 @@
 					color: #fff;
 					padding: 0.625em 0.5em;
 					margin: 0 0.75em;
-					border-bottom: 1px solid lighten(@base02, 5%);
+					border-bottom: 2px solid lighten(@base02, 2.5%);
 					line-height: 1.375em;
 					font-weight: 300;
 

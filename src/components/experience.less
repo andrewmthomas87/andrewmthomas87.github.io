@@ -1,0 +1,114 @@
+@import (reference) '~less/variables.less';
+
+.experience {
+	background-color: #fff;
+	padding-bottom: 4em;
+
+	.link {
+		color: @blue;
+		text-decoration: underline;
+	}
+
+	.title {
+		color: @base02;
+		padding-top: 0.125em;
+		margin: 0;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 7.5em;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.quote {
+		color: @base01;
+		padding: 0.75em;
+		font-size: 1.5em;
+		font-weight: 300;
+		text-align: center;
+
+		.author {
+			color: @base1;
+		}
+	}
+
+	.block {
+		width: 60em;
+		max-width: ~'calc(100% - 4em)';
+		margin: 0 auto;
+		margin-top: 1em;
+
+		.type {
+			color: #fff;
+			margin: 0;
+			margin-top: 3em;
+			margin-bottom: 0.5em;
+			font-size: 1.25em;
+			font-weight: 300;
+
+			.span {
+				padding: 0.125em 0.25em;
+				background-color: @blue;
+			}
+
+			&::first-letter {
+				font-size: 1.25em;
+			}
+		}
+
+		.item {
+			margin-bottom: 2em;
+
+			.company {
+				color: @base02;
+				margin: 0;
+				margin-top: 0.25em;
+				margin-bottom: 0.125em;
+				font-size: 1.75em;
+				font-weight: 400;
+
+				.small {
+					font-size: 0.75em;
+					font-weight: 300;
+				}
+			}
+
+			.position {
+				color: @base01;
+				margin: 0;
+				margin-bottom: 0.2em;
+				font-size: 1.25em;
+				font-weight: 300;
+			}
+
+			.description {
+				color: #222;
+				margin: 0;
+				margin-bottom: 0.75em;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 1.125em;
+				font-weight: 300;
+			}
+
+			.dates {
+				color: @base02;
+				margin: 0.25em 0;
+				font-size: 1.125em;
+				font-weight: 300;
+			}
+
+			.list {
+				margin-top: 0.5em;
+				margin-bottom: 1.25em;
+
+				.listItem {
+					color: #222;
+					margin-bottom: 0.5em;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size: 1.125em;
+					font-weight: 300;
+				}
+			}
+
+		}
+	}
+}
