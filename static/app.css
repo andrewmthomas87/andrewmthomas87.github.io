@@ -11,12 +11,12 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-transform: perspective(8px);
-          transform: perspective(8px);
   -webkit-perspective: 8px;
           perspective: 8px;
   -webkit-perspective-origin: 0 0;
           perspective-origin: 0 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .GxTkgOapViwITncaoZ527 {
@@ -34,16 +34,6 @@ body {
   background-color: #2aa198;
 }
 
-._1muHphoRtjPLGqWz417fhh {
-  position: fixed;
-  top: 10em;
-  left: 10em;
-  width: 100px;
-  height: 100px;
-  background-color: #222;
-  -webkit-transform: translate3d(0, 0, 3px);
-          transform: translate3d(0, 0, 3px);
-}
 ._36pB7-ig6Zmx7_bc0JZzVs {
   height: 100vh;
   min-height: 500px;
