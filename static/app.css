@@ -15,8 +15,6 @@ body {
           perspective: 8px;
   -webkit-perspective-origin: 0 0;
           perspective-origin: 0 0;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 .GxTkgOapViwITncaoZ527 {
@@ -37,11 +35,9 @@ body {
 ._36pB7-ig6Zmx7_bc0JZzVs {
   height: 100vh;
   min-height: 500px;
-  -webkit-transform: translateZ(-3px);
-          transform: translateZ(-3px);
+  -webkit-transform: translate3d(0, 0, -3px);
+          transform: translate3d(0, 0, -3px);
   z-index: -1;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 ._36pB7-ig6Zmx7_bc0JZzVs ._2iZaLfNTMMnEXKcP9sajON {
   position: relative;
@@ -50,8 +46,6 @@ body {
   background-image: url(./7512576cf37da0230bdca4c7d2a19ae5.jpg);
   background-position: 60% center;
   background-size: cover;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 ._36pB7-ig6Zmx7_bc0JZzVs ._2iZaLfNTMMnEXKcP9sajON .uxgZwqoBvkKIdfF5VMD5u {
   position: absolute;
