@@ -1,6 +1,6 @@
-
 .header {
 	height: 100vh;
+	min-height: 500px;
 	transform: translateZ(-3px);
 	z-index: -1;
 
@@ -9,7 +9,7 @@
 		width: 137.5%;
 		height: 137.5%;
 		background-image: url('../assets/andrew.jpg');
-		background-position: center;
+		background-position: 60% center;
 		background-size: cover;
 
 		.title {
@@ -22,6 +22,26 @@
 			font-size: 12.5em;
 			font-weight: 400;
 			line-height: 0.875em;
+
+			@media (max-width: 800px) {
+				font-size: 10em;
+			}
+
+			@media (max-width: 500px) {
+				left: 0.375em;
+			}
+
+			@media (max-width: 350px) {
+				font-size: 8.75em;
+			}
+
+			@media (max-width: 300px) {
+				font-size: 7.5em;
+			}
+
+			@media (max-height: 500px) {
+				top: ~'calc(100vh - 1em)';
+			}
 		}
 	}
 }

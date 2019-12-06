@@ -7,11 +7,15 @@ function Skills(): React.ReactElement {
 		<section className={s.skills}>
 			<h2 className={s.title}>My skills</h2>
 			<div className={s.legend}>
-				<div className={[s.bubble, s.highlight].join(' ')} />
-				<div className={s.label}>Significant experience</div>
+				<div>
+					<span className={[s.bubble, s.highlight].join(' ')} />
+					<span className={s.label}>Significant experience</span>
+				</div>
 				<div className={s.divider} />
-				<div className={s.bubble} />
-				<div className={s.label}>Some experience</div>
+				<div>
+					<span className={s.bubble} />
+					<span className={s.label}>Some experience</span>
+				</div>
 			</div>
 			<div className={s.container}>
 				<div className={s.block}>

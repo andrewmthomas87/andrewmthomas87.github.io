@@ -6,12 +6,22 @@
 
 	.title {
 		color: #fff;
-		padding-top: 0.125em;
-		margin: 0;
+		padding-top: 0.3em;
+		padding-bottom: 0.125em;
+		margin: 0 0.25em;
 		font-family: 'Bebas Neue', cursive;
 		font-size: 7.5em;
 		font-weight: 400;
+		line-height: 0.875em;
 		text-align: center;
+
+		@media (max-width: 500px) {
+			font-size: 6.25em;
+		}
+
+		@media (max-width: 350px) {
+			font-size: 5em;
+		}
 	}
 
 	.legend {
@@ -19,9 +29,11 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		margin: 0 0.75em;
 		margin-bottom: 0.75em;
 
 		.bubble {
+			display: inline-block;
 			width: 1em;
 			height: 1em;
 			margin-right: 0.625em;
@@ -34,19 +46,55 @@
 		}
 
 		.label {
+			display: inline-block;
 			color: #fff;
 			font-size: 1em;
 			font-weight: 300;
+			white-space: nowrap;
 		}
 
 		.divider {
 			width: 1.5em;
+
+			@media (max-width: 425px) {
+				display: none;
+			}
+		}
+
+		@media (max-width: 425px) {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			width: 17.5em;
+			margin: 0 auto;
+			margin-bottom: 0.75em;
+			height: 3.25em;
+		}
+
+		@media (max-width: 300px) {
+			width: 15em;
 		}
 	}
 
 	.container {
 		white-space: nowrap;
 		overflow-x: scroll;
+
+		@media (max-width: 900px) {
+			font-size: 0.875em;
+		}
+
+		@media (max-width: 525px) {
+			font-size: 0.75em;
+		}
+
+		@media (max-width: 425px) {
+			font-size: 0.6875em;
+		}
+
+		@media (max-width: 350px) {
+			font-size: 0.625em;
+		}
 
 		.block {
 			display: inline-block;
