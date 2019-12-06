@@ -15,8 +15,6 @@ body {
           perspective: 8px;
   -webkit-perspective-origin: 0 0;
           perspective-origin: 0 0;
-  -webkit-transform-style: flat;
-          transform-style: flat;
 }
 
 .GxTkgOapViwITncaoZ527 {
@@ -39,9 +37,6 @@ body {
   min-height: 500px;
   -webkit-transform: translate3d(0, 0, -3px);
           transform: translate3d(0, 0, -3px);
-  -webkit-transform-style: flat;
-          transform-style: flat;
-  z-index: -3;
 }
 ._36pB7-ig6Zmx7_bc0JZzVs ._2iZaLfNTMMnEXKcP9sajON {
   position: relative;
