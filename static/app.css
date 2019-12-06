@@ -1,22 +1,26 @@
 html {
+  height: 100%;
   font-family: 'Fira Code', monospace;
   font-size: 14px;
 }
 body {
   margin: 0;
+  height: 100%;
+}
+#root {
+  height: 100%;
+  overflow: hidden;
 }
 
 ._1R-qcxB_FztDqxuJ9H8itZ {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-perspective: 8px;
           perspective: 8px;
   -webkit-perspective-origin: 0 0;
           perspective-origin: 0 0;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 .GxTkgOapViwITncaoZ527 {
