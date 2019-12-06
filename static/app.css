@@ -34,14 +34,17 @@ body {
   background-color: #2aa198;
 }
 
-._3_6yp0PJ4MYBgxaMF55C1F {
-  height: 100vh;
-  min-height: 500px;
-  visibility: hidden;
+._1muHphoRtjPLGqWz417fhh {
+  position: absolute;
+  top: 10em;
+  left: 10em;
+  width: 100px;
+  height: 100px;
+  background-color: #222;
+  -webkit-transform: translate3d(0, 0, 3px);
+          transform: translate3d(0, 0, 3px);
 }
 ._36pB7-ig6Zmx7_bc0JZzVs {
-  position: absolute;
-  width: 100vw;
   height: 100vh;
   min-height: 500px;
   -webkit-transform: translate3d(0, 0, -3px);
