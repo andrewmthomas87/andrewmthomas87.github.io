@@ -42,7 +42,7 @@ body {
   height: 100vh;
   min-height: 400px;
 }
-@supports (perspective: 8px) {
+@supports (transform: translate3d(0, 0, -3px)) {
   ._36pB7-ig6Zmx7_bc0JZzVs {
     -webkit-transform: translate3d(0, 0, -3px);
             transform: translate3d(0, 0, -3px);
@@ -57,7 +57,7 @@ body {
   background-size: cover;
   font-size: 0.727em;
 }
-@supports (perspective: 8px) {
+@supports (transform: translate3d(0, 0, -3px)) {
   ._36pB7-ig6Zmx7_bc0JZzVs ._2iZaLfNTMMnEXKcP9sajON {
     width: 137.5%;
     height: 137.5%;
