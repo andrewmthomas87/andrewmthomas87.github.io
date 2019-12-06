@@ -34,8 +34,14 @@ body {
   background-color: #2aa198;
 }
 
+._3_6yp0PJ4MYBgxaMF55C1F {
+  height: 100vh;
+  min-height: 500px;
+  visibility: hidden;
+}
 ._36pB7-ig6Zmx7_bc0JZzVs {
-  position: relative;
+  position: absolute;
+  width: 100vw;
   height: 100vh;
   min-height: 500px;
   -webkit-transform: translate3d(0, 0, -3px);
