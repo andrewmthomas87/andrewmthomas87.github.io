@@ -11,6 +11,8 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transform: perspective(8px);
+          transform: perspective(8px);
   -webkit-perspective: 8px;
           perspective: 8px;
   -webkit-perspective-origin: 0 0;
