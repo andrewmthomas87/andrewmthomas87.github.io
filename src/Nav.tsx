@@ -1,6 +1,7 @@
 import { GitHub as GitHubIcon, LinkedIn as LinkedInIcon } from '@mui/icons-material'
 import { AppBar, Button, IconButton, Stack, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { Box } from '@mui/system'
+import resumeURL from './Andrew-Thomas-Resume-Full.pdf'
 
 const Nav: React.FC = () => {
 	const theme = useTheme()
@@ -22,13 +23,7 @@ const Nav: React.FC = () => {
 							<LinkedInIcon fontSize="small" />
 						</IconButton>
 					</Stack>
-					<Button
-						variant="contained"
-						disableElevation
-						href="/Andrew-Thomas-Resume-Full.pdf"
-						target="_blank"
-						size="small"
-					>
+					<Button variant="contained" disableElevation href={resumeURL} target="_blank" size="small">
 						View resume
 					</Button>
 				</Stack>
