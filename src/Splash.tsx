@@ -19,9 +19,9 @@ const Splash: React.FC = () => (
 				color="white"
 				position="absolute"
 				bottom="0.75em"
-				left="0.75em"
+				left={{ xs: '0.375em', sm: '0.5em', md: '0.75em' }}
 				fontFamily="'Bebas Neue', cursive"
-				fontSize="8em"
+				fontSize={{ xs: '7em', sm: '7.5em', md: '8em' }}
 				letterSpacing="0"
 				lineHeight="0.875em"
 			>

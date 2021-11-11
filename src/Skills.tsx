@@ -34,7 +34,14 @@ const Skills: React.FC = () => {
 
 	return (
 		<Box bgcolor={theme.palette.primary.main}>
-			<Typography variant="h1" component="h2" pt={3} fontFamily="'Bebas Neue', cursive" textAlign="center">
+			<Typography
+				variant="h1"
+				component="h2"
+				pt={3}
+				fontFamily="'Bebas Neue', cursive"
+				fontSize={{ xs: '6em', sm: '6.5em', md: '7em' }}
+				textAlign="center"
+			>
 				My Skills
 			</Typography>
 			<Box px={1} pt={2} pb={3} fontFamily="'Fira Code', monospace" textAlign="center">
@@ -49,6 +56,7 @@ const Skills: React.FC = () => {
 						width="fit-content"
 						px={3}
 						pb={4}
+						mx="auto"
 						bgcolor={theme.palette.primary.dark}
 					>
 						<Stack direction="row" spacing={3} p={3} pb={1}>

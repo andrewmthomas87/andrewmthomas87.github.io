@@ -10,6 +10,7 @@ import {
 	Paper,
 	Stack,
 	Typography,
+	useMediaQuery,
 	useTheme,
 } from '@mui/material'
 import { Box } from '@mui/system'
@@ -108,15 +109,21 @@ https://www.team1619.org - a high school FIRST Robotics Competition team.
 `)
 
 const Experience: React.FC = () => (
-	<Box p={3} pb={6}>
-		<Typography variant="h1" component="h2" fontFamily="'Bebas Neue', cursive" textAlign="center">
+	<Box pt={3} pb={6}>
+		<Typography
+			variant="h1"
+			component="h2"
+			fontFamily="'Bebas Neue', cursive"
+			fontSize={{ xs: '6em', sm: '6.5em', md: '7em' }}
+			textAlign="center"
+		>
 			My Experience
 		</Typography>
 		<Box px={1} pt={2} pb={3} fontFamily="'Fira Code', monospace" textAlign="center">
 			Talk is cheap. Show me the code. <span style={{ opacity: 0.75 }}>// Linus Torvalds</span>
 		</Box>
 		<Container maxWidth="md">
-			<Paper sx={{ p: { xs: 3, md: 4 }, bgcolor: '#18191d' }}>
+			<Paper sx={{ p: { xs: 2, sm: 3, md: 4 }, bgcolor: '#18191d' }}>
 				<Stack direction="column" spacing={5}>
 					<Experiences title="Professional" experiences={professional} />
 					<Experiences title="Extracurricular" experiences={extracurricular} />
@@ -131,6 +138,7 @@ const Experiences: React.FC<{ title: string; experiences: ReturnType<typeof expe
 	experiences,
 }) => {
 	const theme = useTheme()
+	const matches = useMediaQuery(theme.breakpoints.up('sm'))
 
 	return (
 		<Box>
@@ -158,9 +166,9 @@ const Experiences: React.FC<{ title: string; experiences: ReturnType<typeof expe
 						</Typography>
 					</Box>
 					<Stack direction="row" spacing={2}>
-						<Typography variant="h6">{e.role}</Typography>
+						<Typography variant={matches ? 'h6' : 'subtitle1'}>{e.role}</Typography>
 						<Box flex={1} />
-						<Typography variant="subtitle1">{e.time}</Typography>
+						<Typography variant={matches ? 'subtitle1' : 'subtitle2'}>{e.time}</Typography>
 					</Stack>
 					{e.blocks.map((b, index) =>
 						typeof b === 'string' ? (
@@ -170,7 +178,7 @@ const Experiences: React.FC<{ title: string; experiences: ReturnType<typeof expe
 						) : (
 							<List key={index} dense>
 								{b.map((v, index) => (
-									<ListItem key={index}>
+									<ListItem key={index} disableGutters={!matches}>
 										<ListItemIcon>
 											<CheckCircleIcon sx={{ fontSize: '0.75rem' }} />
 										</ListItemIcon>
